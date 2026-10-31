@@ -1,0 +1,183 @@
+{
+  "case": "rohm-c014-d-llc-full-bridge",
+  "rohm_id": "C-014-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(C-014-D) DC-DC LLC Full-Bridge Converter (Discrete)_20260525.plecs",
+  "original_sha256": "98055210643f8585b9bef9ef668b93b1c745cf1b651b99873b97988a628e8399",
+  "original_end_seconds": 0.2,
+  "capture_model": "plecs/CaseSet_rohm_c014_d_llc_full_bridge.plecs",
+  "capture_sha256": "d3b132aa1fc6e0da111bdd706319ef85e80219027dff255a126b139543aabe15",
+  "capture_name": "CaseSet_rohm_c014_d_llc_full_bridge",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "R1",
+      "plecs_signal": "Resistor voltage",
+      "resolved_component": "R1",
+      "resolved_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "SiC-MOSFET_A1/FET",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "SiC-MOSFET_A1/FET",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "SiC-MOSFET_A1/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "SiC-MOSFET_A1/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_dc",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_dc",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "R1",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "R1",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "Si(LV)-MOSFET_A/FET",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "Si(LV)-MOSFET_A/FET",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH008",
+      "plecs_component": "Si(LV)-MOSFET_A/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "Si(LV)-MOSFET_A/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH009",
+      "plecs_component": "Am14",
+      "plecs_signal": "Measured current",
+      "resolved_component": "Am14",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-c014-d-llc-full-bridge\\pulse\\netlist.md",
+      "sha256": "aa7b3eb223fcb426a75895f4a877df015ccf78f7e9e917c335cb45c601443c1d"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-c014-d-llc-full-bridge\\pulse\\controller.c",
+      "sha256": "7018eeb12d427dedbad9617be7d597e932232f3f97b464eae92a9186af7c264f"
+    },
+    {
+      "file": "pulse/sr_gate.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-c014-d-llc-full-bridge\\pulse\\sr_gate.c",
+      "sha256": "296ac45c1c0b02b3dde701046f843e4539943e07be3f668c469ac0e431d90c64"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.20000000000000001 SAVE_DT=1u"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.002,
+    "native_seconds": 0.002,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:33:55 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 51.071121800050605,
+  "csv_samples": 200001,
+  "csv_actual_end_seconds": 0.2,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "b88046670cd9d6f0b9b60c80cc850897c6220bd9e913e474e46898b98fd072f4",
+      "bytes": 15687995,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "0072f7bbb044cf0e331b51c8cae758efae864a1109fedfeb0c21e542ba6ae324",
+      "bytes": 15335409,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "ee431ebbc66fb38cf474ac2c6940e0f927a60889bdad0559ca7f05bfbd7c2ef4",
+      "bytes": 247,
+      "rows": 1,
+      "start_seconds": 0.2,
+      "end_seconds": 0.2
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(C-014-D) DC-DC LLC Full-Bridge Converter (Discrete)_20260525.plecs",
+      "bytes": 215532,
+      "sha256": "98055210643f8585b9bef9ef668b93b1c745cf1b651b99873b97988a628e8399"
+    },
+    {
+      "file": "source/C-014-D.zip",
+      "bytes": 124165,
+      "sha256": "07af62f69c206c2f0dd5054aafeec7420d3649bb93472dd3127086d960bcae79"
+    },
+    {
+      "file": "source/C-014-D_rc.pdf",
+      "bytes": 988306,
+      "sha256": "e8510a12b653395b954894a8670c6ae13c40c37239d64becc385273beddef79f"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

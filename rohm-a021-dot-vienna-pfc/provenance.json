@@ -1,0 +1,252 @@
+{
+  "case": "rohm-a021-dot-vienna-pfc",
+  "rohm_id": "A-021-DOT",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(A-021-DOT) AC-DC 3-Phase Vienna PFC (DOT247)_20260525.plecs",
+  "original_sha256": "5b41f705acd10170be056174aa1b9db0e5aa4b097dbbc55b61a391e812c19440",
+  "original_end_seconds": 0.5,
+  "capture_model": "plecs/CaseSet_rohm_a021_dot_vienna_pfc.plecs",
+  "capture_sha256": "9c96eee92f0fb7327611bae4c1ca67657dea8f4170e7abd59215319d8dcdfb4a",
+  "capture_name": "CaseSet_rohm_a021_dot_vienna_pfc",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor voltage",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "L1",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L1",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "V_ac1",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac1",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "V_ac2",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac2",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "V_ac3",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac3",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "L2",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L2",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "L3",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L3",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH008",
+      "plecs_component": "V_ac1",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac1",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH009",
+      "plecs_component": "V_ac2",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac2",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH010",
+      "plecs_component": "V_ac3",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac3",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH011",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH012",
+      "plecs_component": "DOT247(CS)_A1/FET_1/FET_1",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(CS)_A1/FET_1/FET_1",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH013",
+      "plecs_component": "DOT247(CS)_A1/Id_1",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(CS)_A1/Id_1",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH014",
+      "plecs_component": "SiC-SBD_A1/D1",
+      "plecs_signal": "Diode current",
+      "resolved_component": "SiC-SBD_A1/D1",
+      "resolved_signal": "Diode current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-a021-dot-vienna-pfc\\pulse\\netlist.md",
+      "sha256": "5edfc8cb407a5720e32a305e2b2bb977f3f8ce7a6b39a421dacd6af11d275656"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-a021-dot-vienna-pfc\\pulse\\controller.c",
+      "sha256": "0e5c247e6b5fc50a4c21cbf2577d25fdb2371550a2a5422aa7884e580cd6150c"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.5 SAVE_DT=1u"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.002,
+    "native_seconds": 0.002,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:27:15 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 30.56445810000878,
+  "csv_samples": 500001,
+  "csv_actual_end_seconds": 0.5,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "d7bf14aa7b70e5af3560bab10e56e64b3f5b6c967ccc7fa9a969d872b91ee8a4",
+      "bytes": 26485997,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "a8a5e7f9f442c08d75de2696b38563b6fec93514ab31b22f1abfd0bc71be0421",
+      "bytes": 26148811,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "8166fe82f6fd8cf4ba76057e00547a91ae0d60740ffeb5faad2339af44e56b7d",
+      "bytes": 26311619,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "b913550f4956f73cd681d9b628d2871a72fc3eb97df87a0e2bb8f32b25ca95d3",
+      "bytes": 26387188,
+      "rows": 100000,
+      "start_seconds": 0.3,
+      "end_seconds": 0.399999
+    },
+    {
+      "file": "plecs/waveforms_005.csv",
+      "sha256": "6d896b7b114a16df6a9ad4f489c124fa36f72e4a51daa39a96e6627206ae46f5",
+      "bytes": 26385797,
+      "rows": 100000,
+      "start_seconds": 0.39999999999999997,
+      "end_seconds": 0.49999899999999997
+    },
+    {
+      "file": "plecs/waveforms_006.csv",
+      "sha256": "a4f50b96f528415cca4acdeb013ddb44ab6112d0a96854def87e3b1f70c9a84f",
+      "bytes": 363,
+      "rows": 1,
+      "start_seconds": 0.5,
+      "end_seconds": 0.5
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(A-021-DOT) AC-DC 3-Phase Vienna PFC (DOT247)_20260525.plecs",
+      "bytes": 355416,
+      "sha256": "5b41f705acd10170be056174aa1b9db0e5aa4b097dbbc55b61a391e812c19440"
+    },
+    {
+      "file": "source/A-021-DOT.zip",
+      "bytes": 96633,
+      "sha256": "77f60d70666e2b7d7388cc9dd4bad5a4db0f5c39e305bf3d022e22155f5585b6"
+    },
+    {
+      "file": "source/A-021-DOT_rc.pdf",
+      "bytes": 880606,
+      "sha256": "7360d1c2d91afd525f2a082b8e8e718b7713f4b95bd75191f9d3171629b91487"
+    },
+    {
+      "file": "source/IDEAL_Diode.xml",
+      "bytes": 4671,
+      "sha256": "565064ff8203667d6ce0bc476312cfc0ffac2ae66105e59c552e1154dc37b7dc"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

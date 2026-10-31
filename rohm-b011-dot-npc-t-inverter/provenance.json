@@ -1,0 +1,274 @@
+{
+  "case": "rohm-b011-dot-npc-t-inverter",
+  "rohm_id": "B-011-DOT",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(B-011-DOT) DC-AC 3-phase 3-Level NPC-Type-T Inverter (DOT247)_20260525.plecs",
+  "original_sha256": "85af1715fc390efc94cd26653f68833e4f1e8ae8663d8ce8ab70da604ea0086f",
+  "original_end_seconds": 0.5,
+  "capture_model": "plecs/CaseSet_rohm_b011_dot_npc_t_inverter.plecs",
+  "capture_sha256": "9f5fe4dacbee0f969f59d8ed1cb5edca559235b080b9ce1ea58d5f0ea4075182",
+  "capture_name": "CaseSet_rohm_b011_dot_npc_t_inverter",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "VIN",
+      "plecs_signal": "Measured voltage",
+      "resolved_component": "VIN",
+      "resolved_signal": "Measured voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "Vin/2",
+      "plecs_signal": "Source current",
+      "resolved_component": "Vin/2",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "Vin/2'",
+      "plecs_signal": "Source current",
+      "resolved_component": "Vin/2'",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "3ph Meter",
+      "plecs_signal": "Measured voltage[0]",
+      "resolved_component": "3ph Meter",
+      "resolved_signal": "Measured voltage[0]",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "3ph Meter",
+      "plecs_signal": "Measured voltage[1]",
+      "resolved_component": "3ph Meter",
+      "resolved_signal": "Measured voltage[1]",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "3ph Meter",
+      "plecs_signal": "Measured voltage[2]",
+      "resolved_component": "3ph Meter",
+      "resolved_signal": "Measured voltage[2]",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "3ph Meter",
+      "plecs_signal": "Measured current[0]",
+      "resolved_component": "3ph Meter",
+      "resolved_signal": "Measured current[0]",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH008",
+      "plecs_component": "3ph Meter",
+      "plecs_signal": "Measured current[1]",
+      "resolved_component": "3ph Meter",
+      "resolved_signal": "Measured current[1]",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH009",
+      "plecs_component": "3ph Meter",
+      "plecs_signal": "Measured current[2]",
+      "resolved_component": "3ph Meter",
+      "resolved_signal": "Measured current[2]",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH010",
+      "plecs_component": "DOT247(HB)_A/FET_L/FET_L",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(HB)_A/FET_L/FET_L",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH011",
+      "plecs_component": "DOT247(HB)_A/FET_H/FET_H",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(HB)_A/FET_H/FET_H",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH012",
+      "plecs_component": "DOT247(HB)_A/Id_L",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(HB)_A/Id_L",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH013",
+      "plecs_component": "DOT247(HB)_A/Id_H",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(HB)_A/Id_H",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH014",
+      "plecs_component": "DOT247(CS)_A/FET_2/FET_2",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(CS)_A/FET_2/FET_2",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH015",
+      "plecs_component": "DOT247(CS)_A/FET_1/FET_1",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(CS)_A/FET_1/FET_1",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH016",
+      "plecs_component": "DOT247(CS)_A/Id_2",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(CS)_A/Id_2",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH017",
+      "plecs_component": "DOT247(CS)_A/Id_1",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(CS)_A/Id_1",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\using plecs\\b011-c-control-20261031\\input.md",
+      "sha256": "5e37bce1bc987dcd4a3929f6abfc1e91db6ad067f3eab2edcba5753d6e31e294"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\using plecs\\b011-c-control-20261031\\controller.c",
+      "sha256": "13282dbd60774076ce13d6e0ab21bbf3e40eae6ad5edafa0579b83095fd2a749"
+    }
+  ],
+  "pulse_status": "候选；INITIAL_MODE_CYCLE，未跑通整机",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.002003 SAVE_DT=0.000001"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "SOURCE_ONLY",
+    "compared_seconds": null,
+    "native_seconds": null,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:28:24 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 23.289778399979696,
+  "csv_samples": 500001,
+  "csv_actual_end_seconds": 0.5,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "c5c754a68574cb579e4c40cfd2f5d85695d7b462165be075e197336392db563b",
+      "bytes": 14362013,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "364e2de8e422a1f6889b77a2429402a8e459c82f05a7179a71ef64fc86a21f4c",
+      "bytes": 14009809,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "ea6651ac5141736f89dadef62578f793d841724a2a7fdec5b5e977d44ae866f9",
+      "bytes": 14172893,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "2536837d6a725b361f05514dde7f19f8876ca7fdc40ef912c484f6d400a03714",
+      "bytes": 14246930,
+      "rows": 100000,
+      "start_seconds": 0.3,
+      "end_seconds": 0.399999
+    },
+    {
+      "file": "plecs/waveforms_005.csv",
+      "sha256": "47506d4b33631e739b1c2c755e457952717bcc4a7ca43d3458056dad9e14f76e",
+      "bytes": 14247289,
+      "rows": 100000,
+      "start_seconds": 0.39999999999999997,
+      "end_seconds": 0.49999899999999997
+    },
+    {
+      "file": "plecs/waveforms_006.csv",
+      "sha256": "52202c4d1b2ffa9070837cd35786d349edf13032f2ffa91a0cdbc4e21d2f1a36",
+      "bytes": 222,
+      "rows": 1,
+      "start_seconds": 0.5,
+      "end_seconds": 0.5
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(B-011-DOT) DC-AC 3-phase 3-Level NPC-Type-T Inverter (DOT247)_20260525.plecs",
+      "bytes": 330042,
+      "sha256": "85af1715fc390efc94cd26653f68833e4f1e8ae8663d8ce8ab70da604ea0086f"
+    },
+    {
+      "file": "source/B-011-DOT.zip",
+      "bytes": 42356,
+      "sha256": "ea13262820f37075b0b4089fc6a0caa3f73fd1c60b4065ad9fae3601afd0aacc"
+    },
+    {
+      "file": "source/B-011-DOT_rc.pdf",
+      "bytes": 858216,
+      "sha256": "35bcdce2b6cd3272f43045f8fe461ae7728a0c216ac24651be48982ada789824"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

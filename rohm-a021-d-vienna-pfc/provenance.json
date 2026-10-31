@@ -1,0 +1,357 @@
+{
+  "case": "rohm-a021-d-vienna-pfc",
+  "rohm_id": "A-021-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(A-021-D) AC-DC 3-Phase Vienna PFC (Discrete)_20260525.plecs",
+  "original_sha256": "65f41691593b440ee891c59697922dd5ec416f45ae07862c37089fcd5e4350cf",
+  "original_end_seconds": 0.5,
+  "capture_model": "plecs/CaseSet_rohm_a021_d_vienna_pfc.plecs",
+  "capture_sha256": "7ff695f62e17a992e2ee2f20f17701971fe21d78978ef64f7b6cf3ccbea3b423",
+  "capture_name": "CaseSet_rohm_a021_d_vienna_pfc",
+  "capture_changes": [
+    "模型名称改为唯一标识；保留原始 Test_time 表达式",
+    "将原厂三个 Scope 的同一批信号改接顶层输出，包含 4 路原有温度信号",
+    "从 Iin1/Iin2/Iin3 原有观测输出各增加一个纯观测分支",
+    "所有原厂电气、控制、参数、初值、探针及其信号源保持不变"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH003",
+      "plecs_component": "V_ac1",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac1",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "V_ac2",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac2",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "V_ac3",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac3",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH008",
+      "plecs_component": "V_ac1",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac1",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH009",
+      "plecs_component": "V_ac2",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac2",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH010",
+      "plecs_component": "V_ac3",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac3",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH011",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH001",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor voltage",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "MOS_JUNCTION_TEMP_C",
+      "plecs_component": "SiC-MOSFET_A2",
+      "plecs_signal": "Device junction temp",
+      "unit": "degC",
+      "resolved_component": "SiC-MOSFET_A2",
+      "resolved_signal": "Device junction temp"
+    },
+    {
+      "pulse": "CH012",
+      "plecs_component": "SiC-MOSFET_A2",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "SiC-MOSFET_A2",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH013",
+      "plecs_component": "SiC-MOSFET_A2",
+      "plecs_signal": "Device current",
+      "resolved_component": "SiC-MOSFET_A2",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "MOS_HEATSINK_TEMP_C",
+      "plecs_component": "Heat Sink",
+      "plecs_signal": "Temperature",
+      "unit": "degC",
+      "resolved_component": "Heat Sink",
+      "resolved_signal": "Temperature"
+    },
+    {
+      "pulse": "DIODE_JUNCTION_TEMP_C",
+      "plecs_component": "SiC-SBD_A1",
+      "plecs_signal": "Diode junction temperature (C)",
+      "unit": "degC",
+      "resolved_component": "SiC-SBD_A1",
+      "resolved_signal": "Diode junction temperature (C)"
+    },
+    {
+      "pulse": "CH014",
+      "plecs_component": "SiC-SBD_A1",
+      "plecs_signal": "Diode current (A)",
+      "resolved_component": "SiC-SBD_A1",
+      "resolved_signal": "Diode current (A)",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "DIODE_HEATSINK_TEMP_C",
+      "plecs_component": "Heat Sink1",
+      "plecs_signal": "Temperature",
+      "unit": "degC",
+      "resolved_component": "Heat Sink1",
+      "resolved_signal": "Temperature"
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "L1",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L1",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "L2",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L2",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "L3",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L3",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-a021-d-vienna-pfc\\pulse\\netlist.md",
+      "sha256": "a59a0f1eddb70d60964e7941856625a169568ebc677cffbe898eb21e6e92d96b"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-a021-d-vienna-pfc\\pulse\\controller.c",
+      "sha256": "7e7f905bf7e00acc2d9f6f5d7264fc694ab949e4bdb2cf3cc8ee0c9a8a47f4fc"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.5 SAVE_DT=1u"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.002,
+    "native_seconds": 0.002,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_initial_error": "<Fault -32500: \"method execution error: Unconnected terminals overlapped by other elements were found in the following schematics:\\nCaseSet_rohm_a021_d_vienna_pfc\\n\\n\\nTo view all involved components, choose 'Show highlighted' from the View menu.\">",
+  "capture_strategy": "original_scope_signals_and_existing_current_probes",
+  "capture_output_mapping": [
+    {
+      "scope": "Input_Output",
+      "input": 1,
+      "output_index": 1
+    },
+    {
+      "scope": "Input_Output",
+      "input": 2,
+      "output_index": 2
+    },
+    {
+      "scope": "Input_Output",
+      "input": 3,
+      "output_index": 3
+    },
+    {
+      "scope": "Input_Output",
+      "input": 4,
+      "output_index": 4
+    },
+    {
+      "scope": "MOSFET",
+      "input": 1,
+      "output_index": 5
+    },
+    {
+      "scope": "MOSFET",
+      "input": 2,
+      "output_index": 6
+    },
+    {
+      "scope": "MOSFET",
+      "input": 3,
+      "output_index": 7
+    },
+    {
+      "scope": "MOSFET",
+      "input": 4,
+      "output_index": 8
+    },
+    {
+      "scope": "Diode",
+      "input": 1,
+      "output_index": 9
+    },
+    {
+      "scope": "Diode",
+      "input": 2,
+      "output_index": 10
+    },
+    {
+      "scope": "Diode",
+      "input": 3,
+      "output_index": 11
+    },
+    {
+      "original_probe": "Iin1",
+      "output_index": 12
+    },
+    {
+      "original_probe": "Iin2",
+      "output_index": 13
+    },
+    {
+      "original_probe": "Iin3",
+      "output_index": 14
+    }
+  ],
+  "csv_run_date": "2026-11-01 00:50:26 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 331.6879284000024,
+  "csv_samples": 500001,
+  "csv_actual_end_seconds": 0.5,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "5ca30a6aa2fe8bf4d8994c3035395e91888c65a0746cbe91346c0572b6e8003f",
+      "bytes": 34043934,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "bf326970bc9167c5838fab9ea69d451d0e38fadc51803c9d6403af25855816f4",
+      "bytes": 33708272,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "b89ea19bc16bdc05da5116269d8cb66f6cfb3887c91eca529af0f1a31f9389d0",
+      "bytes": 33871121,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "e44cddd86dc702ea93071e5b8bd9d81cfbbd024605a79fcc07969b6ba8d41a34",
+      "bytes": 33945331,
+      "rows": 100000,
+      "start_seconds": 0.3,
+      "end_seconds": 0.399999
+    },
+    {
+      "file": "plecs/waveforms_005.csv",
+      "sha256": "534ab89dde2d5cce5d36658696513b93b2221a83fa8c73341a2b14176bc8be37",
+      "bytes": 33945052,
+      "rows": 100000,
+      "start_seconds": 0.39999999999999997,
+      "end_seconds": 0.49999899999999997
+    },
+    {
+      "file": "plecs/waveforms_006.csv",
+      "sha256": "9bad8ddbf3cee11b1dd7364ef119adb8d458aca7f59632aafe29769e0533f5de",
+      "bytes": 522,
+      "rows": 1,
+      "start_seconds": 0.5,
+      "end_seconds": 0.5
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "csv_previous_error": "<Fault -32500: \"method execution error: Unconnected terminals overlapped by other elements were found in the following schematics:\\nCaseSet_rohm_a021_d_vienna_pfc\\n\\n\\nTo view all involved components, choose 'Show highlighted' from the View menu.\">",
+  "source_files": [
+    {
+      "file": "source/(A-021-D) AC-DC 3-Phase Vienna PFC (Discrete)_20260525.plecs",
+      "bytes": 295693,
+      "sha256": "65f41691593b440ee891c59697922dd5ec416f45ae07862c37089fcd5e4350cf"
+    },
+    {
+      "file": "source/A-021-D.zip",
+      "bytes": 195229,
+      "sha256": "ab1573c5549202d62fe7f2da73cd5687e2a90a01e926775518abf9e8a8ef7dfa"
+    },
+    {
+      "file": "source/A-021-D_rc.pdf",
+      "bytes": 795107,
+      "sha256": "c133c181f682f0ddc6de953ab8f3667fa80da9388e0cca6bd6f8254138956bf1"
+    },
+    {
+      "file": "source/IDEAL_Diode.xml",
+      "bytes": 4671,
+      "sha256": "565064ff8203667d6ce0bc476312cfc0ffac2ae66105e59c552e1154dc37b7dc"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9910369,
+      "sha256": "dc5a637da861a071ecba190aa5ab38723e6614e93c2f5e3d7cc81f1850ed64b4"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "case": "rohm-a011-d-totem-pole-pfc-diode",
+  "rohm_id": "A-011-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(A-011-D) AC-DC Totem-Pole PFC Diode Rectification_(Discrete)_20260525.plecs",
+  "original_sha256": "9d111857fb143d9f37ad4474d865a1b319b673a798d3b961925d0b5b0e2ea6ff",
+  "original_end_seconds": 0.5,
+  "capture_model": "plecs/CaseSet_rohm_a011_d_totem_pole_pfc_diode.plecs",
+  "capture_sha256": "ba9ffd0f49857d0c7fc5447bc95cf80bfe92e2aa340dc12fa277e478c4a0889c",
+  "capture_name": "CaseSet_rohm_a011_d_totem_pole_pfc_diode",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "V_ac",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "V_ac",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "R1",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "R1",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "R1",
+      "plecs_signal": "Resistor voltage",
+      "resolved_component": "R1",
+      "resolved_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "SiC-SBD_A/D1",
+      "plecs_signal": "Diode current",
+      "resolved_component": "SiC-SBD_A/D1",
+      "resolved_signal": "Diode current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "SiC-MOSFET_A/FET",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "SiC-MOSFET_A/FET",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "SiC-MOSFET_A/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "SiC-MOSFET_A/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-a011-d-totem-pole-pfc-diode\\pulse\\netlist.md",
+      "sha256": "20b010a9a1910b682ddbe75ab026b0bb6c2cec0a3afbf5335ddf2cbbc0cae239"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-a011-d-totem-pole-pfc-diode\\pulse\\controller.c",
+      "sha256": "ab487261b115b35e26dcc57c984f1e0cc82e8f94699cbd0d1dc90b0e41d13f93"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.5 SAVE_DT=1u"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.5,
+    "native_seconds": 0.5,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:26:38 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 47.17101539997384,
+  "csv_samples": 500001,
+  "csv_actual_end_seconds": 0.5,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "4a6cbacf687844c18f702f7b174184ad1b1803a9fcffff22d789bc2ed7db7aee",
+      "bytes": 13699010,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "9c6c0bb61959ff90a38b05d32bdb9c956b5029b187d8e8e61c274df5d1b76f8f",
+      "bytes": 13389181,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "be3b47402f8a881ce203c65a5cfd47e45864d7dd5ce25df16553bb3c49b4d8b6",
+      "bytes": 13551281,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "c108c4ded231335bc97b19de7e3e92d2e1c9aad5434b105d486ceea244d23ed2",
+      "bytes": 13624500,
+      "rows": 100000,
+      "start_seconds": 0.3,
+      "end_seconds": 0.399999
+    },
+    {
+      "file": "plecs/waveforms_005.csv",
+      "sha256": "3adef86b2ae3d044823b542311fb49418cdb8e544123d543aeea8414dd3c66b3",
+      "bytes": 13625410,
+      "rows": 100000,
+      "start_seconds": 0.39999999999999997,
+      "end_seconds": 0.49999899999999997
+    },
+    {
+      "file": "plecs/waveforms_006.csv",
+      "sha256": "5f81a54875a79c713eed29c7134e891a89bbc6f1c59794f81b748dbdfe3f5057",
+      "bytes": 124,
+      "rows": 1,
+      "start_seconds": 0.5,
+      "end_seconds": 0.5
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(A-011-D) AC-DC Totem-Pole PFC Diode Rectification_(Discrete)_20260525.plecs",
+      "bytes": 142683,
+      "sha256": "9d111857fb143d9f37ad4474d865a1b319b673a798d3b961925d0b5b0e2ea6ff"
+    },
+    {
+      "file": "source/A-011-D.zip",
+      "bytes": 193959,
+      "sha256": "e17d74953747982d6c5ad9961edc0e9a3e63d26622205216cb90730b7dc83d70"
+    },
+    {
+      "file": "source/A-011-D_rc.pdf",
+      "bytes": 728974,
+      "sha256": "ca88187cf77d8aad8f1e96e443623cc5278a0e87c0491d7c4f1586b2bd2fd7a4"
+    },
+    {
+      "file": "source/IDEAL_Diode.xml",
+      "bytes": 4671,
+      "sha256": "565064ff8203667d6ce0bc476312cfc0ffac2ae66105e59c552e1154dc37b7dc"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

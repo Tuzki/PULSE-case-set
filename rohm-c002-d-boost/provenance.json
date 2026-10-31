@@ -1,0 +1,159 @@
+{
+  "case": "rohm-c002-d-boost",
+  "rohm_id": "C-002-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(C-002-D) DC-DC Boost Converter (Discrete)_20260525.plecs",
+  "original_sha256": "8a2d87aa0d1f2c6e54bb459e9368b9426c380ca4169d75301698d96abc99edb0",
+  "original_end_seconds": 0.3,
+  "capture_model": "plecs/CaseSet_rohm_c002_d_boost.plecs",
+  "capture_sha256": "b5f6553dbb6a1ba50147e52431ebcdb8fd89343fa4e6f2a8223945eb744a5058",
+  "capture_name": "CaseSet_rohm_c002_d_boost",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "SiC_MOSFET",
+      "plecs_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "SiC_MOSFET",
+      "plecs_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "SiC_SBD",
+      "plecs_signal": "Diode current (A)",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-c002-d-boost\\pulse\\netlist.md",
+      "sha256": "83e90dbfd3b3d8b11532f7b2c4122b8dfa5cbb19eccdd28e56a3639318567894"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-c002-d-boost\\pulse\\controller.c",
+      "sha256": "778a443cbff27d997fb7fcaf91cd9776e5ccef0ab1f458142bfe914fa8b7da28"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.29999999999999999 SAVE_DT=1.9999999999999999e-07"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.3,
+    "native_seconds": 0.3,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:29:12 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 10.237441700010095,
+  "csv_samples": 300001,
+  "csv_actual_end_seconds": 0.3,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "1c8c32deea8ca1f82079902c771f07f6dfe209d9b3cffdb7a095a4506a648df0",
+      "bytes": 12110424,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "a7a1f60f5962fa4b41ccdfb1652482169d9265169194c2e317f4a0b3fb3f38d5",
+      "bytes": 11757113,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "453d81146d6f4802e9d17ea14e2ed0c54e13ca091e91d17ebfb42ee71f4dee8a",
+      "bytes": 11920588,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "4dd2ca52f2cbf39e949491b5fe799062e756c147b128677e913739cc3beb9cac",
+      "bytes": 168,
+      "rows": 1,
+      "start_seconds": 0.3,
+      "end_seconds": 0.3
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(C-002-D) DC-DC Boost Converter (Discrete)_20260525.plecs",
+      "bytes": 72896,
+      "sha256": "8a2d87aa0d1f2c6e54bb459e9368b9426c380ca4169d75301698d96abc99edb0"
+    },
+    {
+      "file": "source/C-002-D.zip",
+      "bytes": 176758,
+      "sha256": "a1be5f4d55d010b0fcd9a00132842353c75864e65a801bbe61379544d3f1b095"
+    },
+    {
+      "file": "source/C-002-D_rc.pdf",
+      "bytes": 743107,
+      "sha256": "df62160a819d921993be97a2307f075526503ba6a35e576469e78df3ee0d423a"
+    },
+    {
+      "file": "source/IDEAL_Diode.xml",
+      "bytes": 4671,
+      "sha256": "565064ff8203667d6ce0bc476312cfc0ffac2ae66105e59c552e1154dc37b7dc"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

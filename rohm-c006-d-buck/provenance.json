@@ -1,0 +1,166 @@
+{
+  "case": "rohm-c006-d-buck",
+  "rohm_id": "C-006-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(C-006-D) DC-DC Buck Converter (Discrete)_20260525.plecs",
+  "original_sha256": "77424b266d562483170da44337cb56d3588c55d20aa4e8380bab04be3f54480e",
+  "original_end_seconds": 0.3,
+  "capture_model": "plecs/CaseSet_rohm_c006_d_buck.plecs",
+  "capture_sha256": "c5b28cae31d6ab212b6d0e66e0a60c5044729eeb97a172e18b10268d7c772bde",
+  "capture_name": "CaseSet_rohm_c006_d_buck",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "scope": "Input_Output",
+      "pulse": "VINBUS",
+      "unit": "V",
+      "atol": 0.0001,
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source voltage"
+    },
+    {
+      "scope": "Input_Output",
+      "pulse": "IIN",
+      "unit": "A",
+      "atol": 0.0001,
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source current"
+    },
+    {
+      "scope": "Input_Output",
+      "pulse": "VOUT",
+      "unit": "V",
+      "atol": 0.0001,
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor voltage"
+    },
+    {
+      "scope": "Input_Output",
+      "pulse": "IOUT",
+      "unit": "A",
+      "atol": 0.0001,
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor current"
+    },
+    {
+      "scope": "Electrical",
+      "pulse": "VDS",
+      "unit": "V",
+      "atol": 0.0001,
+      "plecs_component": "SiC_MOSFET",
+      "plecs_signal": "Device voltage"
+    },
+    {
+      "scope": "Electrical",
+      "pulse": "ID",
+      "unit": "A",
+      "atol": 0.0001,
+      "plecs_component": "SiC_MOSFET",
+      "plecs_signal": "Device current"
+    },
+    {
+      "scope": "Electrical",
+      "pulse": "IDIODE",
+      "unit": "A",
+      "atol": 0.0001,
+      "plecs_component": "SiC_SBD",
+      "plecs_signal": "Diode current (A)"
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-c006-d-buck\\pulse\\netlist.md",
+      "sha256": "2bc655605967043a5d106b7073f2b586b5bc682663ac37a73359199f449b99d6"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-c006-d-buck\\pulse\\controller.c",
+      "sha256": "778a443cbff27d997fb7fcaf91cd9776e5ccef0ab1f458142bfe914fa8b7da28"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=300m SAVE_DT=200n"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.3,
+    "native_seconds": 0.3,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:29:25 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 11.946454300021287,
+  "csv_samples": 300001,
+  "csv_actual_end_seconds": 0.3,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "43b2f90495e45161e5536d770205dd35788b0171f973355aab60ed60ed96dd30",
+      "bytes": 10566188,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "d38b10100314bfced99c5b3f444dcd33cf9813333da1892e222dc8eb66c26b3e",
+      "bytes": 10212351,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "7d559d015a77a2b68ff6c53f000c03fc6a567e326f60282de9ad4beacdd7cfb7",
+      "bytes": 10376223,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "7cb9c4431238d23382da51cecdbd8254385974f8bc8634eeef1a24a7775ebc97",
+      "bytes": 148,
+      "rows": 1,
+      "start_seconds": 0.3,
+      "end_seconds": 0.3
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(C-006-D) DC-DC Buck Converter (Discrete)_20260525.plecs",
+      "bytes": 72704,
+      "sha256": "77424b266d562483170da44337cb56d3588c55d20aa4e8380bab04be3f54480e"
+    },
+    {
+      "file": "source/C-006-D.zip",
+      "bytes": 176556,
+      "sha256": "254d0e2fa2697005486355566bb28f906e9a56afcce0887d399c2d2f5bdfd101"
+    },
+    {
+      "file": "source/C-006-D_rc.pdf",
+      "bytes": 793928,
+      "sha256": "505e868a6b041031f5aac94748e17e29c4e96590b4f6f262388e3e36d512cc5b"
+    },
+    {
+      "file": "source/IDEAL_Diode.xml",
+      "bytes": 4671,
+      "sha256": "565064ff8203667d6ce0bc476312cfc0ffac2ae66105e59c552e1154dc37b7dc"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

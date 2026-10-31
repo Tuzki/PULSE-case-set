@@ -1,0 +1,189 @@
+{
+  "case": "rohm-a002-d-boost-pfc",
+  "rohm_id": "A-002-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(A-002-D) AC-DC Boost PFC Diode Rectification (Discrete)_20260525.plecs",
+  "original_sha256": "782b6ad109d1c8aeb55387c7786aad367f724fdae83476c674b5ca25ab9ad2a4",
+  "original_end_seconds": 0.5,
+  "capture_model": "plecs/CaseSet_rohm_a002_d_boost_pfc.plecs",
+  "capture_sha256": "f02ad1867a9f5dbcb245bbdb659eadf7332a0563b42e1f475d5f6ad2524dd0ef",
+  "capture_name": "CaseSet_rohm_a002_d_boost_pfc",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "SiC_MOSFET/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "SiC_MOSFET/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "SiC_MOSFET/FET",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "SiC_MOSFET/FET",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "SiC_SBD/D1",
+      "plecs_signal": "Diode current",
+      "resolved_component": "SiC_SBD/D1",
+      "resolved_signal": "Diode current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "V_ac",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_ac",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "V_ac",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "V_ac",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor voltage",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-a002-d-boost-pfc\\pulse\\netlist.md",
+      "sha256": "e3f1a2d5e6be1530cf043cad31757bfddf5031fa44d3bb292f24bfb13d34da61"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-a002-d-boost-pfc\\pulse\\controller.c",
+      "sha256": "fc0bf6020dc8982c4d249fa7de2e6494ca483b13f613bae7a96b1a180a1a4cad"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.080000000 SAVE_DT=0.000001"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.08,
+    "native_seconds": 0.08,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:25:20 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 48.06540329998825,
+  "csv_samples": 500001,
+  "csv_actual_end_seconds": 0.5,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "9692c85b926f9aa5540da74daa8e1bbba11b5ae79170361b66090fd4f5901629",
+      "bytes": 13900390,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "78f934ae61234d67773b4f827bd109123888b320ce47db40a7b6b82d83dcca3d",
+      "bytes": 13436250,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "057b6a898730a10ab214d2b7585269e6ab1a68cab47d4890707e6c0c25a91a22",
+      "bytes": 13623994,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "29bac50a28105cb99a3aaf5ef41dd96b088fc3ecbacf6060862efaf223936b06",
+      "bytes": 13720398,
+      "rows": 100000,
+      "start_seconds": 0.3,
+      "end_seconds": 0.399999
+    },
+    {
+      "file": "plecs/waveforms_005.csv",
+      "sha256": "31a5120171af6f9d59d36272a6cb7da5d5ec0af091b58a2bfd4abc1e51b78f53",
+      "bytes": 13684052,
+      "rows": 100000,
+      "start_seconds": 0.39999999999999997,
+      "end_seconds": 0.49999899999999997
+    },
+    {
+      "file": "plecs/waveforms_006.csv",
+      "sha256": "3c9bb29d2fad29db1104e6bd94ace6084d33515a153805106c5ece3d62deb1ff",
+      "bytes": 168,
+      "rows": 1,
+      "start_seconds": 0.5,
+      "end_seconds": 0.5
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(A-002-D) AC-DC Boost PFC Diode Rectification (Discrete)_20260525.plecs",
+      "bytes": 131775,
+      "sha256": "782b6ad109d1c8aeb55387c7786aad367f724fdae83476c674b5ca25ab9ad2a4"
+    },
+    {
+      "file": "source/A-002-D.zip",
+      "bytes": 182741,
+      "sha256": "5dbcc165c10cc9308201e957c7c06169026e040e7a9e065bfcfcfc343474e545"
+    },
+    {
+      "file": "source/A-002-D_rc.pdf",
+      "bytes": 940310,
+      "sha256": "203518daea3d3c3c1566ad88b4fed0c18d617f705fe1fd151e4a59658549d916"
+    },
+    {
+      "file": "source/IDEAL_Diode.xml",
+      "bytes": 4671,
+      "sha256": "565064ff8203667d6ce0bc476312cfc0ffac2ae66105e59c552e1154dc37b7dc"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

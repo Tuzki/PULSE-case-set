@@ -1,0 +1,191 @@
+{
+  "case": "rohm-c012-d-llc-half-bridge",
+  "rohm_id": "C-012-D",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(C-012-D) DC-DC LLC Half-Bridge Converter (Discrete)_20260525.plecs",
+  "original_sha256": "7415b4b65c968c6341ec8dce7bb6c6965f080c134507fda59874c3ec30fc3699",
+  "original_end_seconds": 0.3,
+  "capture_model": "plecs/CaseSet_rohm_c012_d_llc_half_bridge.plecs",
+  "capture_sha256": "b86f0980842e41f8e39acab4d930f84744004cd96c1037b8fcae3f88cc7e79fb",
+  "capture_name": "CaseSet_rohm_c012_d_llc_half_bridge",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "R1",
+      "plecs_signal": "Resistor voltage",
+      "resolved_component": "R1",
+      "resolved_signal": "Resistor voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "V_dc",
+      "plecs_signal": "Source current",
+      "resolved_component": "V_dc",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "L3",
+      "plecs_signal": "Inductor current",
+      "resolved_component": "L3",
+      "resolved_signal": "Inductor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "R1",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "R1",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "SiC-MOS_A1/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "SiC-MOS_A1/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "Am1",
+      "plecs_signal": "Measured current",
+      "resolved_component": "Am1",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "Am2",
+      "plecs_signal": "Measured current",
+      "resolved_component": "Am2",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH008",
+      "plecs_component": "LV-MOS_A3/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "LV-MOS_A3/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH009",
+      "plecs_component": "LV-MOS_A5/FET",
+      "plecs_signal": "Device current",
+      "resolved_component": "LV-MOS_A5/FET",
+      "resolved_signal": "Device current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-c012-d-llc-half-bridge\\pulse\\netlist.md",
+      "sha256": "13bd8c70f6b674d58091fc044f683be9040cd9a8c0bb3b73ec0f2665dda8835f"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-c012-d-llc-half-bridge\\pulse\\controller.c",
+      "sha256": "145535e255e9219151c5d807f19e38160308a019083bb8306184634f0d9723ad"
+    },
+    {
+      "file": "pulse/sr_gate.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-c012-d-llc-half-bridge\\pulse\\sr_gate.c",
+      "sha256": "296ac45c1c0b02b3dde701046f843e4539943e07be3f668c469ac0e431d90c64"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=0.29999999999999999 SAVE_DT=1u"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "UNRESOLVED",
+    "compared_seconds": 0.002,
+    "native_seconds": 0.0,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:31:08 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 43.92645379999885,
+  "csv_samples": 300001,
+  "csv_actual_end_seconds": 0.3,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "78ba89d1445ec2f82147771d053ded4113248756942d80b84db10ab180096988",
+      "bytes": 14349164,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "f35c36baa6f03141b1a4b093a8f7f491aeac7a151ebb3c14f41c05aa9b3c5e7d",
+      "bytes": 13998263,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "d48292c1645ed4893c96f46e14d10737b26a2ddb5c2aa79d7faac50e7b80c724",
+      "bytes": 14161634,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "d9799d7076918f608e98e30ac8f855f6d25e51ad3e20f2276411f04ae63cf9d2",
+      "bytes": 221,
+      "rows": 1,
+      "start_seconds": 0.3,
+      "end_seconds": 0.3
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(C-012-D) DC-DC LLC Half-Bridge Converter (Discrete)_20260525.plecs",
+      "bytes": 165893,
+      "sha256": "7415b4b65c968c6341ec8dce7bb6c6965f080c134507fda59874c3ec30fc3699"
+    },
+    {
+      "file": "source/C-012-D.zip",
+      "bytes": 133430,
+      "sha256": "a687b888aedd34750b44dabce3098733c81d379bc12b7bbf4abf058837c4b74f"
+    },
+    {
+      "file": "source/C-012-D_rc.pdf",
+      "bytes": 912306,
+      "sha256": "35ac8203fc92af93e63a54cc77148e018d915bd1eb0b2fefe17b82ae74616132"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

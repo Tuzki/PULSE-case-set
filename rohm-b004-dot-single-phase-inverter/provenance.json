@@ -1,0 +1,211 @@
+{
+  "case": "rohm-b004-dot-single-phase-inverter",
+  "rohm_id": "B-004-DOT",
+  "source_url": "https://www.rohm.com/support/plecs-circuit",
+  "original_model": "plecs/(B-004-DOT) DC-AC Single-phase 2-Level Full-Bridge Inverter (DOT247)_20260525.plecs",
+  "original_sha256": "c01488d16227ca5fd42eedffca99acdc60392a76cfdad9e985c6da670e25140c",
+  "original_end_seconds": 0.5,
+  "capture_model": "plecs/CaseSet_rohm_b004_dot_single_phase_inverter.plecs",
+  "capture_sha256": "69bdcf6af30cadb450ddb8710cd75442285e2df6b203f4bdc2b5cd4ad0b1b767",
+  "capture_name": "CaseSet_rohm_b004_dot_single_phase_inverter",
+  "capture_changes": [
+    "仅增加观测探针和顶层输出",
+    "模型名称改为唯一标识",
+    "TimeSpan 将原 Test_time 表达式展开为相同数值"
+  ],
+  "csv_grid_seconds": 1e-06,
+  "channels": [
+    {
+      "pulse": "CH001",
+      "plecs_component": "Vin",
+      "plecs_signal": "Source current",
+      "resolved_component": "Vin",
+      "resolved_signal": "Source current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH002",
+      "plecs_component": "Vin",
+      "plecs_signal": "Source voltage",
+      "resolved_component": "Vin",
+      "resolved_signal": "Source voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH003",
+      "plecs_component": "Am2",
+      "plecs_signal": "Measured current",
+      "resolved_component": "Am2",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH004",
+      "plecs_component": "Am3",
+      "plecs_signal": "Measured current",
+      "resolved_component": "Am3",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH005",
+      "plecs_component": "Vout",
+      "plecs_signal": "Measured voltage",
+      "resolved_component": "Vout",
+      "resolved_signal": "Measured voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH006",
+      "plecs_component": "Rload",
+      "plecs_signal": "Resistor current",
+      "resolved_component": "Rload",
+      "resolved_signal": "Resistor current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH007",
+      "plecs_component": "DOT247(HB)_1/FET_H/FET_H",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(HB)_1/FET_H/FET_H",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH008",
+      "plecs_component": "DOT247(HB)_1/FET_L/FET_L",
+      "plecs_signal": "Device voltage",
+      "resolved_component": "DOT247(HB)_1/FET_L/FET_L",
+      "resolved_signal": "Device voltage",
+      "unit": "V",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH009",
+      "plecs_component": "DOT247(HB)_1/Id_H",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(HB)_1/Id_H",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    },
+    {
+      "pulse": "CH010",
+      "plecs_component": "DOT247(HB)_1/Id_L",
+      "plecs_signal": "Measured current",
+      "resolved_component": "DOT247(HB)_1/Id_L",
+      "resolved_signal": "Measured current",
+      "unit": "A",
+      "atol": 0.0001
+    }
+  ],
+  "pulse_inputs": [
+    {
+      "file": "pulse/netlist.md",
+      "origin": "D:\\codex\\compare-cases\\rohm-b004-dot-single-phase-inverter\\pulse\\netlist.md",
+      "sha256": "8c84d1747affe1bf2d1ef171815c7a64ebcff3b0f8374635f19cf332fe1b83f9"
+    },
+    {
+      "file": "pulse/controller.c",
+      "origin": "D:\\codex\\compare-cases\\rohm-b004-dot-single-phase-inverter\\pulse\\controller.c",
+      "sha256": "167336d60887a37493f163c5df68e8b5e3d8b10d63d7604a71eea5db63b0c2b7"
+    }
+  ],
+  "pulse_status": "历史已转换输入；验收范围见 provenance.json",
+  "pulse_default_tran": [
+    ".TRAN T_END=.5 SAVE_DT=.000001"
+  ],
+  "conditions_note": "CSV 来自原厂控制条件。A002 的 PULSE 为既有 20 us ZOH 转换，不能把原厂连续控制 CSV 当作同模型精度基准。PULSE 默认窗口可能短于原厂全时长；收录不表示全时长 PULSE 验收。",
+  "historical_acceptance": {
+    "status": "COMPLETED",
+    "compared_seconds": 0.5,
+    "native_seconds": 0.5,
+    "netlist_original_T_END_unchanged": true
+  },
+  "csv_status": "COMPLETED",
+  "csv_run_date": "2026-11-01 00:27:41 +0800",
+  "csv_source": "本次新执行的原厂物理/控制模型观测副本",
+  "plecs_simulate_rpc_seconds": 10.60799859999679,
+  "csv_samples": 500001,
+  "csv_actual_end_seconds": 0.5,
+  "csv_exports": [
+    {
+      "file": "plecs/waveforms_001.csv",
+      "sha256": "e5bdeb71a015f3dd84d2082d14dd5eefc4ce8206efee9c87dd45b471d4b06258",
+      "bytes": 16446496,
+      "rows": 100000,
+      "start_seconds": 0.0,
+      "end_seconds": 0.09999899999999999
+    },
+    {
+      "file": "plecs/waveforms_002.csv",
+      "sha256": "06e095125b632c06da4333041d91584ade33fc8cef82eb1a607a8c670dcc7ae4",
+      "bytes": 16090776,
+      "rows": 100000,
+      "start_seconds": 0.09999999999999999,
+      "end_seconds": 0.19999899999999998
+    },
+    {
+      "file": "plecs/waveforms_003.csv",
+      "sha256": "4ed1fdd821ef6ad25b9a3a4f31564ec06aae041929a1c4a1ca476d8b8ed2ed75",
+      "bytes": 16255424,
+      "rows": 100000,
+      "start_seconds": 0.19999999999999998,
+      "end_seconds": 0.29999899999999996
+    },
+    {
+      "file": "plecs/waveforms_004.csv",
+      "sha256": "a318b4cc70a18c97f2deb91c637976ff8df84bf5bbf8eee85f7fc61daf13f207",
+      "bytes": 16328788,
+      "rows": 100000,
+      "start_seconds": 0.3,
+      "end_seconds": 0.399999
+    },
+    {
+      "file": "plecs/waveforms_005.csv",
+      "sha256": "2192941667ec3f013a7049d4ba8aab906ff8ad9e2bd6ecc833cd945b11b8f5bb",
+      "bytes": 16327530,
+      "rows": 100000,
+      "start_seconds": 0.39999999999999997,
+      "end_seconds": 0.49999899999999997
+    },
+    {
+      "file": "plecs/waveforms_006.csv",
+      "sha256": "f0bf04ddb059c2b78f7c63f33b9ed6b03fb634fd94d0fdf395a5e0d4728c9a17",
+      "bytes": 221,
+      "rows": 1,
+      "start_seconds": 0.5,
+      "end_seconds": 0.5
+    }
+  ],
+  "plecs_version": "4.8.2",
+  "source_files": [
+    {
+      "file": "source/(B-004-DOT) DC-AC Single-phase 2-Level Full-Bridge Inverter (DOT247)_20260525.plecs",
+      "bytes": 129342,
+      "sha256": "c01488d16227ca5fd42eedffca99acdc60392a76cfdad9e985c6da670e25140c"
+    },
+    {
+      "file": "source/B-004-DOT.zip",
+      "bytes": 24442,
+      "sha256": "e4bf66d2178c69db1c46007c1b6581bb925f232266ffe48c93271b565eb6bb65"
+    },
+    {
+      "file": "source/B-004-DOT_rc.pdf",
+      "bytes": 836046,
+      "sha256": "225efb225462f357eff9c5c56344252588d1d036a890c6acef9ba8a1ba44e2ad"
+    },
+    {
+      "file": "source/IDEAL_MOSFET.xml",
+      "bytes": 9124,
+      "sha256": "b59fbead9dd485dae63c39032a4e6994dce974be29efeedb0a7c8fbdd7028e13"
+    }
+  ]
+}

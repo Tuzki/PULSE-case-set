@@ -1,0 +1,165 @@
+{
+  "case_count": 20,
+  "cases": [
+    {
+      "case": "rohm-a002-d-boost-pfc",
+      "metadata": "rohm-a002-d-boost-pfc/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-a010-dot-totem-pole-pfc-sync",
+      "metadata": "rohm-a010-dot-totem-pole-pfc-sync/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-a011-d-totem-pole-pfc-diode",
+      "metadata": "rohm-a011-d-totem-pole-pfc-diode/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-a021-d-vienna-pfc",
+      "metadata": "rohm-a021-d-vienna-pfc/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-a021-dot-vienna-pfc",
+      "metadata": "rohm-a021-dot-vienna-pfc/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-b004-d-single-phase-inverter",
+      "metadata": "rohm-b004-d-single-phase-inverter/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-b004-dot-single-phase-inverter",
+      "metadata": "rohm-b004-dot-single-phase-inverter/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-b009-d-motor-driver",
+      "metadata": "rohm-b009-d-motor-driver/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-b011-dot-npc-t-inverter",
+      "metadata": "rohm-b011-dot-npc-t-inverter/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-b012-dot-npc-i-inverter",
+      "metadata": "rohm-b012-dot-npc-i-inverter/provenance.json",
+      "original_end_seconds": 0.5,
+      "csv_status": "COMPLETED",
+      "csv_samples": 500001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c002-d-boost",
+      "metadata": "rohm-c002-d-boost/provenance.json",
+      "original_end_seconds": 0.3,
+      "csv_status": "COMPLETED",
+      "csv_samples": 300001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c006-d-buck",
+      "metadata": "rohm-c006-d-buck/provenance.json",
+      "original_end_seconds": 0.3,
+      "csv_status": "COMPLETED",
+      "csv_samples": 300001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c010-d-flyback",
+      "metadata": "rohm-c010-d-flyback/provenance.json",
+      "original_end_seconds": 0.3,
+      "csv_status": "COMPLETED",
+      "csv_samples": 300001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c011-d-forward",
+      "metadata": "rohm-c011-d-forward/provenance.json",
+      "original_end_seconds": 0.4,
+      "csv_status": "COMPLETED",
+      "csv_samples": 400001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c012-d-llc-half-bridge",
+      "metadata": "rohm-c012-d-llc-half-bridge/provenance.json",
+      "original_end_seconds": 0.3,
+      "csv_status": "COMPLETED",
+      "csv_samples": 300001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c012-dot-llc-half-bridge",
+      "metadata": "rohm-c012-dot-llc-half-bridge/provenance.json",
+      "original_end_seconds": 0.3,
+      "csv_status": "COMPLETED",
+      "csv_samples": 300001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c014-d-llc-full-bridge",
+      "metadata": "rohm-c014-d-llc-full-bridge/provenance.json",
+      "original_end_seconds": 0.2,
+      "csv_status": "COMPLETED",
+      "csv_samples": 200001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c014-dot-llc-full-bridge",
+      "metadata": "rohm-c014-dot-llc-full-bridge/provenance.json",
+      "original_end_seconds": 0.2,
+      "csv_status": "COMPLETED",
+      "csv_samples": 200001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c019-d-phase-shift-full-bridge",
+      "metadata": "rohm-c019-d-phase-shift-full-bridge/provenance.json",
+      "original_end_seconds": 0.2,
+      "csv_status": "COMPLETED",
+      "csv_samples": 200001,
+      "has_pulse_netlist": true
+    },
+    {
+      "case": "rohm-c019-dot-phase-shift-full-bridge",
+      "metadata": "rohm-c019-dot-phase-shift-full-bridge/provenance.json",
+      "original_end_seconds": 0.15,
+      "csv_status": "COMPLETED",
+      "csv_samples": 150001,
+      "has_pulse_netlist": false
+    }
+  ]
+}

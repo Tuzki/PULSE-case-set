@@ -1,0 +1,12 @@
+{
+  "case_count": 20,
+  "full_duration_exports": 20,
+  "checks": [
+    "Original PLECS files and source copies retain recorded SHA256",
+    "Observation-only changes checked for all 20 models, including original electrical/control/probe components and signal graph for A021-D",
+    "CSV columns, finite values, strictly increasing time, uninterrupted chunk boundaries, row counts and original final times checked",
+    "Pulse input hashes, C source references and local include dependencies checked",
+    "Source folders contain files only; every published file is below 95 MiB"
+  ],
+  "errors": []
+}
